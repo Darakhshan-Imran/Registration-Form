@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="regform.css">
+</head>
+<body>
+
+    <form>
+        <h1>Registration Form</h1>
+
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="username" placeholder="Enter full name"><br><br>
+
+            <label for="age">Age:</label>
+            <input type="text" id="age" name="userage" placeholder="Enter your age"><br><br>
+
+            <label for="gender">Gender:</label>
+            <br><br>
+            <input type="radio" id="gender" name="gender" value="male">Male
+            <input type="radio" id="gender" name="gender" value="female">Female
+            <br><br>
+            
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="date-of-birth">
+            
+        </fieldset>
+
+        <fieldset>
+            <legend> Education </legend>
+
+            <label for="education">Qualification</label>
+            <select>
+                <option>Matriculation</option>
+                <option>Intermediate</option>
+                <option>Graduation</option>
+                <option>Post Graduation</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Hobbies</legend>
+
+            <label for="hobbies"></label>
+            <input type="checkbox" id="hobbies" name="hobby1">Reading
+            <input type="checkbox" id="hobbies" name="hobby1">Gardening
+            <input type="checkbox" id="hobbies" name="hobby1">Travelling
+        </fieldset>
+
+        <fieldset>
+            <legend>Contact</legend>
+
+            <label for="contact">Phone Number</label>
+            <input type="tel" id="contact" name="phone-number" pattern="+92-[0-9]{3}-[0-9]{7}">
+            <br><br>
+            <label for="email">Subscribe to our Newsletter</label>
+            <input type="email" id="email" name="email" placeholder="abc@mail.com">
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Feedback</legend>
+            
+            <label for="comments">Comments</label>
+            <br><br>
+            <textarea id="comments" name="comments" placeholder="Write comments here"></textarea>
+        </fieldset>
+        <br><br>
+
+        <div>
+        <button type="Submit">Submit</button>
+        <button type="Reset">Reset</button>
+        </div>
+    </form>
+    
+</body>
+</html>
